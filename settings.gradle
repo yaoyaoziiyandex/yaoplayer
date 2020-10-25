@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'yaoplayer'
-include('app')
+include('yaoplayer')
