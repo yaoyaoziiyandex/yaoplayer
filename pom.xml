@@ -28,7 +28,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
                                                   
   <dependencies>
     <dependency>
@@ -42,6 +41,11 @@
       <artifactId>google-http-client</artifactId>
       <version>1.37.0</version>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli</artifactId>
+      <version>4.5.2</version>
     </dependency>
   </dependencies>
 
