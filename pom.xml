@@ -111,14 +111,37 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>3.0.0</version>
+          <!--
+          <executions>
+            <execution>
+              <goals>
+                <goal>java</goal>
+              </goals>
+            </execution>
+          </executions>
+          -->
           <configuration>
+            <!-- this config for mvn exec:java but systemProperty is not work? --> 
             <mainClass>yaoyaozii.App</mainClass>
             <systemProperties>
               <systemProperty>
                 <key>java.util.logging.config.file</key>
-                <value>/home/yao/yaoplayer/logging.properties</value>
+                <value>logging.properties</value>
               </systemProperty>
             </systemProperties>
+            <!-- - -->
+          
+            <!-- this config for mvn exec:exec / but arrgument logging not work yet-->
+            <!--
+            <executable>java</executable>
+            <arguments>
+              <argument>-classpath</argument>
+              <classpath/>
+              <argument>yaoyaozii.App</argument>
+              <argument>-Djava.util.logging.config.file=logging.properties</argument>
+            </arguments>
+            -->
+
           </configuration>
         </plugin>
         <plugin>
