@@ -22,7 +22,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>libraries-bom</artifactId>
-        <version>12.1.0</version>
+        <version>13.3.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -51,6 +51,10 @@
       <groupId>info.picocli</groupId>
       <artifactId>picocli</artifactId>
       <version>4.5.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.cloud</groupId>
+      <artifactId>google-cloud-firestore</artifactId>
     </dependency>
   </dependencies>
 
